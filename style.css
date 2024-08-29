@@ -18,7 +18,8 @@ header {
 }
 
 .header-content h1 {
-  margin: 0;
+  word-spacing: normal;
+  /* margin: 10; */
 }
 
 header a {
@@ -54,7 +55,7 @@ h2 {
 }
 
 .picintro img {
-  width: 50%;
+  width: 100%;
   border-radius: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   justify-items: center;
@@ -64,10 +65,22 @@ h2 {
   width: 45%;
 }
 
-.picintro h1,
-.picintro h2 {
+.picintro h1 {
+  /* width: fit-content;
+   */
+  /* letter-spacing: 2px; */
+  /* word-spacing: normal; */
+  /* overflow-wrap: break-word; */
+  font-size: 4vw;
   margin: 10px;
   font-weight: normal;
+  /* text-transform: capitalize; */
+  /* text-indent: 10px;
+   */
+}
+
+.picintro h2 {
+  font-size: 2vw;
 }
 
 /* Education and Skills Sections */
@@ -247,6 +260,7 @@ button:hover {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  /* width: fit-content; */
 }
 
 .contacts li {
@@ -254,6 +268,8 @@ button:hover {
   align-items: center;
   gap: 15px;
   margin-bottom: 10px;
+  overflow: hidden;
+  /* width: fit-content; */
 }
 
 .contacts img {
@@ -264,6 +280,8 @@ button:hover {
 .contacts a {
   color: #333;
   text-decoration: none;
+  width: fit-content;
+  max-width: inherit;
 }
 
 .contacts a:hover {
@@ -543,4 +561,46 @@ footer {
     rgba(231, 231, 231, 0.932),
     rgba(248, 248, 248, 0.911)
   );
+}
+
+@media screen and (max-width: 480px) {
+  .header-content {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1,
+  h2 {
+    white-space: nowrap;
+    display: inline;
+    /* background: red; */
+  }
+  h2 {
+    padding-left: 20px;
+  }
+  .picintro {
+    /* max-width: 50%; */
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2px;
+    justify-content: center;
+  }
+
+  .picintro img {
+    width: 100%;
+  }
+
+  .headcontact {
+    background: red;
+    display: none;
+    /* text-overflow: clip; */
+    /* max-width: fit-content; */
+    overflow: hidden;
+  }
+  .contacts {
+    padding: 8px;
+  }
 }
