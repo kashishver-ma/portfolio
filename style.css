@@ -63,17 +63,23 @@ h2 {
 
 .picintro div {
   width: 45%;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .picintro h1 {
   /* width: fit-content;
    */
-  /* letter-spacing: 2px; */
-  /* word-spacing: normal; */
+  /* letter-spacing: 2px;
+  word-spacing: 2px; */
   /* overflow-wrap: break-word; */
   font-size: 4vw;
-  margin: 10px;
+  /* margin: 10px; */
+  text-align: center;
   font-weight: normal;
+  width: 100%;
+
   /* text-transform: capitalize; */
   /* text-indent: 10px;
    */
@@ -81,6 +87,7 @@ h2 {
 
 .picintro h2 {
   font-size: 2vw;
+  text-align: center;
 }
 
 /* Education and Skills Sections */
@@ -230,15 +237,14 @@ h2 {
 }
 
 button {
-  width: 100%;
+  width: fit-content;
+  padding: 8px;
   height: 50px;
   border-radius: 10px;
-  border: 2px solid #ccc;
-  background: linear-gradient(
-    to right,
-    rgba(19, 18, 18, 0.24),
-    rgb(17, 16, 16)
-  );
+  border: 1px solid rgb(228, 220, 220);
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+
+  background: white;
   color: #fff;
   font-size: 1em;
   cursor: pointer;
@@ -248,9 +254,10 @@ button {
 button:hover {
   background: linear-gradient(
     to right,
-    rgb(85, 85, 95),
+    rgb(212, 212, 223),
     rgba(19, 18, 18, 0.24)
   );
+  color: rgb(12, 12, 14);
 }
 
 /* Contacts Section */
